@@ -1,0 +1,9 @@
+<html>
+<body>
+<ul>
+    {{range $index, $element := .}}
+    <li>{{$index}} - {{uc (ft $element)}}</li>
+    {{end}}
+</ul>
+</body>
+</html>

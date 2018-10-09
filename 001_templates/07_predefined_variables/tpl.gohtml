@@ -1,0 +1,14 @@
+<html>
+<body>
+{{index .Xs 0}}
+{{index .Xs 2}}
+{{range .Users}}
+    {{if .Name}}
+        {{.Name}}
+    {{end}}
+    {{if .Admin}}
+        ADMIN!!
+    {{end}}
+{{end}}
+</body>
+</html>

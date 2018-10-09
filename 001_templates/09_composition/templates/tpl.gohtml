@@ -1,0 +1,12 @@
+<html>
+<body>
+{{ .Fall.Term }} - {{ .Fall.CountCourses }} - {{ 1 | .Fall.TakesArg }}
+{{ range .Fall.Courses }}
+    {{ .Name }} - {{ .Units }}
+{{ end }}
+{{ .Spring.Term }} - {{ .Spring.CountCourses }}
+{{ range .Spring.Courses }}
+    {{ .Name }} - {{ .Units }}
+{{ end }}
+</body>
+</html>

@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>index</title>
+</head>
+<body>
+    {{ range . }}
+    <img src="/public/pics/{{.}}" width="200px"/>
+    {{ end }}
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="nf"/>
+        <input type="submit"/>
+    </form>
+</body>
+</html>
